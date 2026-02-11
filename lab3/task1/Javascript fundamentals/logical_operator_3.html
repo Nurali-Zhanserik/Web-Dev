@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script >
+            let who = prompt("Who's there?", "");
+            if (who == "Admin"){
+                let password = prompt("enter the password", "");
+                if (password == "TheMaster"){
+                    alert("Welcome Master!!");
+                }
+                else if (Boolean(password) == true && password != "TheMaster"){
+                    alert("Wrong password");
+                }
+                else {
+                    alert("Cancelled");
+                }
+            }
+            else if (Boolean(who) == true && who != "Admin"){
+                alert("I don't know you...")
+            }
+            else {
+                alert("Cancelled");
+            }
+        </script>
+    </body>
+</html>
